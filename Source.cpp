@@ -1,311 +1,85 @@
-/* #include <iostream>
-#include<iomanip>
-#include<string>
-using namespace std;
-
-struct N
-{
-	char bus_brand[20];
-	float speed;
-	int capacity;
-};
-int main()
-{
-	struct N bus[10];
-	for (int i = 0; i < 10; i++)
-	{
-		cout << "Enter the brand of bus " << i + 1 << " : ";
-		cin >> bus[i].bus_brand;
-		cout << endl;
-		cout << "Enter the speed of the bus " << i + 1 << " : ";
-		cin >> bus[i].speed;
-		cout << endl;
-		cout << "Enter the capacity of the bus " << i + 1 << " : ";
-		cin >> bus[i].capacity;
-		cout << setfill('=') << setw(42) << "=" << endl;
-	}
-
-	cout << endl;
-	cout << setfill(' ') << setw(5) << " BUS BRAND  |  " << "SPEED  |"  << "CAPACITY |" << endl;
-	cout << setfill('-') << setw(33) << "-" << endl;
-	for (int i = 0; i < 10; i++)
-	{
-		cout << setfill(' ') << setw(8) << bus[i].bus_brand << "    |  " 
-			    << setfill(' ') << setw(3) << bus[i].speed << "    |  "
-			    << setfill(' ') << setw(3) << bus[i].capacity << "    |  " << endl;	
-	}
-	
-	cout << endl;
-	cout << setfill(' ') << setw(5) << " BUS BRAND  |  " << "  CAPACITY" << endl;
-	cout << setfill('-') << setw(26) << "-" << endl;
-	for (int i = 0; i < 10; i++)
-	{
-		if (bus[i].speed >= 80)
-		{
-			cout << setfill(' ') << setw(8) << bus[i].bus_brand << "    |  " << setfill(' ') << setw(3) << bus[i].capacity << "  people" << endl;
-		}
-	}
-	return 0;
-} */
-
-/* #include <iostream>
-#include<iomanip>
-#include<string>
-using namespace std;
-
-struct N
-{
-	char bus_brand[20];
-	float speed;
-	int capacity;
-};
-int main()
-{
-	
-	struct N Mercedes[5];
-	struct N Audi[5];
-	struct N Renault[5];
-	cout << setfill(' ') << setw(8) << "MERCEDES CARS" << endl;
-	for (int i = 0; i < 3; i++)
-	{
-		cout << "Enter the brand of Mercedes " << i + 1 << " : ";
-		cin >> Mercedes[i].bus_brand;
-		cout << endl;
-		cout << "Enter the speed of the Mercedes " << i + 1 << " : ";
-		cin >> Mercedes[i].speed;
-		cout << endl;
-		cout << "Enter the capacity of the Mercedes " << i + 1 << " : ";
-		cin >> Mercedes[i].capacity;
-		cout << setfill('=') << setw(42) << "=" << endl;
-	}
-
-	cout << setfill(' ') << setw(8) << "AUDI CARS" << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		cout << "Enter the brand of Audi " << i + 1 << " : ";
-		cin >> Audi[i].bus_brand;
-		cout << endl;
-		cout << "Enter the speed of the Audi " << i + 1 << " : ";
-		cin >> Audi[i].speed;
-		cout << endl;
-		cout << "Enter the capacity of the Audi " << i + 1 << " : ";
-		cin >> Audi[i].capacity;
-		cout << setfill('=') << setw(42) << "=" << endl;
-	}
-
-	cout << setfill(' ') << setw(8) << "RENAULT CARS" << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		cout << "Enter the brand of Renault " << i + 1 << " : ";
-		cin >> Renault[i].bus_brand;
-		cout << endl;
-		cout << "Enter the speed of the Renault " << i + 1 << " : ";
-		cin >> Renault[i].speed;
-		cout << endl;
-		cout << "Enter the capacity of the Renault " << i + 1 << " : ";
-		cin >> Renault[i].capacity;
-		cout << setfill('=') << setw(42) << "=" << endl;
-	}
-
-	cout << setfill(' ') << setw(8) << "MERCEDES CARS" << endl;
-	cout << endl;
-	cout << setfill(' ') << setw(5) << " CAR  BRAND  |  " << "SPEED  |" << "CAPACITY |" << endl;
-	cout << setfill('-') << setw(33) << "-" << endl;
-	for (int i = 0; i < 3; i++)
-	{
-		cout << setfill(' ') << setw(8) << Mercedes[i].bus_brand << "    |  "
-			<< setfill(' ') << setw(3) << Mercedes[i].speed << "    |  "
-			<< setfill(' ') << setw(3) << Mercedes[i].capacity << "    |  " << endl;
-	}
-
-	cout << setfill(' ') << setw(8) << "AUDI CARS" << endl;
-	cout << endl;
-	cout << setfill(' ') << setw(5) << " CAR  BRAND  |  " << "SPEED  |" << "CAPACITY |" << endl;
-	cout << setfill('-') << setw(33) << "-" << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		cout << setfill(' ') << setw(8) << Audi[i].bus_brand << "    |  "
-			<< setfill(' ') << setw(3) << Audi[i].speed << "    |  "
-			<< setfill(' ') << setw(3) << Audi[i].capacity << "    |  " << endl;
-	}
-
-	cout << setfill(' ') << setw(8) << "RENAULT CARS" << endl;
-	cout << endl;
-	cout << setfill(' ') << setw(5) << " CAR  BRAND  |  " << "SPEED  |" << "CAPACITY |" << endl;
-	cout << setfill('-') << setw(33) << "-" << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		cout << setfill(' ') << setw(8) << Renault[i].bus_brand << "    |  "
-			<< setfill(' ') << setw(3) << Renault [i] .speed << "    |  "
-			<< setfill(' ') << setw(3) << Renault[i].capacity << "    |  " << endl;
-	}
-	cout << endl;
-	cout << setfill(' ') << setw(8) << "MERCEDES CARS" << endl;
-	cout << setfill(' ') << setw(5) << " CAR BRAND  |  " << "  CAPACITY" << endl;
-	cout << setfill('-') << setw(26) << "-" << endl;
-	for (int i = 0; i < 3; i++)
-	{
-		if (Mercedes[i].speed >= 80)
-		{
-			cout << setfill(' ') << setw(8) << Mercedes[i].bus_brand << "    |  " << setfill(' ') << setw(3) << Mercedes[i].capacity << "  people" << endl;
-		}
-	}
-
-	cout << endl;
-	cout << setfill(' ') << setw(8) << "AUDI CARS" << endl;
-	cout << setfill(' ') << setw(5) << " CAR BRAND  |  " << "  CAPACITY" << endl;
-	cout << setfill('-') << setw(26) << "-" << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		if (Audi[i].speed >= 80)
-		{
-			cout << setfill(' ') << setw(8) << Audi[i].bus_brand << "    |  " << setfill(' ') << setw(3) << Audi[i].capacity << "  people" << endl;
-		}
-	}
-
-	cout << endl;
-	cout << setfill(' ') << setw(8) << "RENAULT CARS" << endl;
-	cout << setfill(' ') << setw(5) << " CAR BRAND  |  " << "  CAPACITY" << endl;
-	cout << setfill('-') << setw(26) << "-" << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		if (Renault[i].speed >= 80)
-		{
-			cout << setfill(' ') << setw(8) << Renault[i].bus_brand << "    |  " << setfill(' ') << setw(3) << Renault[i].capacity << "  people" << endl;
-		}
-	}
-	return 0;
-} */
-
-
-
-
-//***************************************************************
-//                   HEADER FILE USED IN PROJECT
-//****************************************************************
-
 #include<iostream>
 #include<fstream>
 #include<iomanip>
 using namespace std;
-
-
-//***************************************************************
-//                   CLASS USED IN PROJECT
-//****************************************************************
-
-class student
+struct car
 {
-	int rollno;
-	char name[50];
-	int p_marks, c_marks, m_marks, e_marks, cs_marks;
-	double per;
-	char grade;
-	void calculate();	//function to calculate grade
-public:
-	void getdata();		//function to accept data from user
-	void showdata() const;	//function to show data on screen
+	int serial;
+	char make[50];
+	char model[20];
+	int speed, capacity;
+	void getdata();		
+	void showdata() const;	
 	void show_tabular() const;
-	int retrollno() const;
-}; //class ends here
+	int retserial() const;
+}; 
 
-
-void student::calculate()
+void car::getdata()
 {
-	per = (p_marks + c_marks + m_marks + e_marks + cs_marks) / 5.0;
-	if (per >= 60)
-		grade = 'A';
-	else if (per >= 50)
-		grade = 'B';
-	else if (per >= 33)
-		grade = 'C';
-	else
-		grade = 'F';
-}
-
-void student::getdata()
-{
-	cout << "\nEnter The roll number of student ";
-	cin >> rollno;
-	cout << "\n\nEnter The Name of student ";
+	cout << "\nÂâåäèòå ñåðèéíûé íîìåð àâòîìîáèëÿ:  ";
+	cin >> serial;
+	cout << "\n\nÂâåäèòå ìàðêó àâòîìîáèëÿ:  ";
 	cin.ignore();
-	cin.getline(name, 50);
-	cout << "\nEnter The marks in physics out of 100 : ";
-	cin >> p_marks;
-	cout << "\nEnter The marks in chemistry out of 100 : ";
-	cin >> c_marks;
-	cout << "\nEnter The marks in maths out of 100 : ";
-	cin >> m_marks;
-	cout << "\nEnter The marks in english out of 100 : ";
-	cin >> e_marks;
-	cout << "\nEnter The marks in computer science out of 100 : ";
-	cin >> cs_marks;
-	calculate();
+	cin.getline(make, 50);
+	cout << "\n\nÂâåäèòå ìîäåëü àâòîìîáèëÿ: ";
+	cin.ignore();
+	cin.getline(model, 20);
+	cout << "\nÂâåäèòå ñêîðîñòü àâòîìîáèëÿ(êì/÷): ";
+	cin >> speed;
+	cout << "\nÂâåäèòå âìåñòèìîñòü àâòîìîáèëÿ : ";
+	cin >> capacity;
 }
 
-void student::showdata() const
+void car::showdata() const
 {
-	cout << "\nRoll number of student : " << rollno;
-	cout << "\nName of student : " << name;
-	cout << "\nMarks in Physics : " << p_marks;
-	cout << "\nMarks in Chemistry : " << c_marks;
-	cout << "\nMarks in Maths : " << m_marks;
-	cout << "\nMarks in English : " << e_marks;
-	cout << "\nMarks in Computer Science :" << cs_marks;
-	cout << "\nPercentage of student is  :" << per;
-	cout << "\nGrade of student is :" << grade;
+	cout << "\nÑåðèéíûé íîìåð àâòîìîáèëÿ : " << serial;
+	cout << "\nÌàðêà àâòîìîáèëÿ : " << make;
+	cout << "\nÌîäåëü àâòîìîáèëÿ : " << model;
+	cout << "\nÑêîðîñòü àâòîìîáèëÿ (êì/÷) : " << speed;
+	cout << "\nÂìåñòèìîñòü àâòîìîáèëÿ : " << capacity;
 }
 
-void student::show_tabular() const
+void car::show_tabular() const
 {
-	cout << rollno << setw(6) << " " << name << setw(10) << p_marks << setw(4) << c_marks << setw(4) << m_marks << setw(4)
-		<< e_marks << setw(4) << cs_marks << setw(8) << per << setw(6) << grade << endl;
+	cout << 
+		serial << setfill(' ') << setw(4) << "| " << setfill(' ') << setw(6)<<
+		make << setfill(' ') << setw(6) << "| " << setfill(' ') << setw(6) <<
+		model << setfill(' ') << setw(6) << "| " << setfill(' ') << setw(6) <<
+		speed << setfill(' ') << setw(6) << "| " << setfill(' ') << setw(6) <<
+		capacity << setfill(' ') << setw(6) << "| " << endl;
 }
 
-int  student::retrollno() const
+int  car::retserial() const
 {
-	return rollno;
+	return serial;
 }
-
-
-//***************************************************************
-//    	function declaration
-//****************************************************************
-
-void write_student();	//write the record in binary file
-void display_all();	//read all records from binary file
-void display_sp(int);	//accept rollno and read record from binary file
-void modify_student(int);	//accept rollno and update record of binary file
-void delete_student(int);	//accept rollno and delete selected records from binary file
-void class_result();	//display all records in tabular format from binary file
-void result();		//display result menu
-void intro();		//display welcome screen
-void entry_menu();	//display entry menu on screen
-
-
-//***************************************************************
-//    	THE MAIN FUNCTION OF PROGRAM
-//****************************************************************
-
+void write_car();	
+void display_all();	
+void display_specific(int);	
+void modify_car(int);
+void car_records();	
+void records_page();	
+void intro();		
+void entry_menu();	
 
 int main()
 {
+	setlocale(LC_ALL, "Russian");
 	char ch;
-	cout.setf(ios::fixed | ios::showpoint);
-	cout << setprecision(2); // program outputs decimal number to two decimal places
+	cout << setprecision(2);
 	intro();
 	do
 	{
 		system("cls");
-		cout << "\n\n\n\tMAIN MENU";
-		cout << "\n\n\t01. RESULT MENU";
-		cout << "\n\n\t02. ENTRY/EDIT MENU";
-		cout << "\n\n\t03. EXIT";
-		cout << "\n\n\tPlease Select Your Option (1-3) ";
+		cout << "\n\n\n\tÃËÀÂÍÎÅ ÌÅÍÞ ";
+		cout << "\n\n\t01. ÑÏÈÑÎÊ ÀÂÒÎÌÎÁÈËÅÉ";
+		cout << "\n\n\t02. ÌÅÍÞ ÐÅÄÀÊÒÈÐÎÂÀÍÈß";
+		cout << "\n\n\t03. ÂÛÕÎÄ";
+		cout << "\n\n\tÂûáåðèòå îïöèþ (1-3) ";
 		cin >> ch;
 		switch (ch)
 		{
-		case '1': result();
+		case '1': records_page();
 			break;
 		case '2': entry_menu();
 			break;
@@ -316,33 +90,11 @@ int main()
 	} while (ch != '3');
 	return 0;
 }
-
-//***************************************************************
-//    	function to write in file
-//****************************************************************
-
-void write_student()
+/* void delete_student(int n)
 {
-	student st;
-	ofstream outFile;
-	outFile.open("student.dat", ios::binary | ios::app);
-	st.getdata();
-	outFile.write(reinterpret_cast<char*> (&st), sizeof(student));
-	outFile.close();
-	cout << "\n\nStudent record Has Been Created ";
-	cin.ignore();
-	cin.get();
-}
-
-//***************************************************************
-//    	function to read all records from file
-//****************************************************************
-
-void display_all()
-{
-	student st;
+	car st;
 	ifstream inFile;
-	inFile.open("student.dat", ios::binary);
+	inFile.open("car.dat", ios::binary);
 	if (!inFile)
 	{
 		cout << "File could not be open !! Press any Key...";
@@ -350,8 +102,52 @@ void display_all()
 		cin.get();
 		return;
 	}
-	cout << "\n\n\n\t\tDISPLAY ALL RECORD !!!\n\n";
-	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(student)))
+	ofstream outFile;
+	outFile.open("temp.dat", ios::out);
+	inFile.seekg(0, ios::beg);
+	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(car)))
+	{
+		if (st.retserial() != n)
+		{
+			outFile.write(reinterpret_cast<char*> (&st), sizeof(car));
+		}
+	}
+	outFile.close();
+	inFile.close();
+	remove("car.dat");
+	rename("Temp.dat", "student.dat");
+	cout << "\n\n\tRecord Deleted ..";
+	cin.ignore();
+	cin.get();
+} */
+
+void write_car()
+{
+	car st;
+	ofstream outFile;
+	outFile.open("car.dat", ios::binary | ios::app);
+	st.getdata();
+	outFile.write(reinterpret_cast<char*> (&st), sizeof(car));
+	outFile.close();
+	cout << "\n\ Íîâàÿ çàïèñü ñîçäàíà!! ";
+	cin.ignore();
+	cin.get();
+}
+
+void display_all()
+{
+	car st;
+	ifstream inFile;
+	inFile.open("car.dat", ios::binary);
+	if (!inFile)
+	{
+		cout << "Îøèáêà îòêðûòèÿ ôàéëà...";
+		cin.ignore();
+		cin.get();
+		return;
+	}
+	cout << "\n\n\n\t\tÎÒÎÁÐÀÆÅÍÈÅ ÂÑÅÕ ÇÀÏÈÑÅÉ !!!\n\n";
+	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(car)))
 	{
 		st.showdata();
 		cout << "\n\n====================================\n";
@@ -361,26 +157,22 @@ void display_all()
 	cin.get();
 }
 
-//***************************************************************
-//    	function to read specific record from file
-//****************************************************************
-
-void display_sp(int n)
+void display_specific(int n)
 {
-	student st;
+	car st;
 	ifstream inFile;
-	inFile.open("student.dat", ios::binary);
+	inFile.open("car.dat", ios::binary);
 	if (!inFile)
 	{
-		cout << "File could not be open !! Press any Key...";
+		cout << "Îøèáêà îòêðûòèÿ ôàéëà...";
 		cin.ignore();
 		cin.get();
 		return;
 	}
 	bool flag = false;
-	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(student)))
+	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(car)))
 	{
-		if (st.retrollno() == n)
+		if (st.retserial() == n)
 		{
 			st.showdata();
 			flag = true;
@@ -388,24 +180,20 @@ void display_sp(int n)
 	}
 	inFile.close();
 	if (flag == false)
-		cout << "\n\nrecord not exist";
+		cout << "\n\nçàïèñü íå ñóùåñòâóåò";
 	cin.ignore();
 	cin.get();
 }
 
-//***************************************************************
-//    	function to modify record of file
-//****************************************************************
-
-void modify_student(int n)
+void modify_car(int n)
 {
 	bool found = false;
-	student st;
+	car st;
 	fstream File;
-	File.open("student.dat", ios::binary | ios::in | ios::out);
+	File.open("car.dat", ios::binary | ios::in | ios::out);
 	if (!File)
 	{
-		cout << "File could not be open !! Press any Key...";
+		cout << "Îøèáêà îòêðûòèÿ ôàéëà...";
 		cin.ignore();
 		cin.get();
 		return;
@@ -413,82 +201,48 @@ void modify_student(int n)
 	while (!File.eof() && found == false)
 	{
 
-		File.read(reinterpret_cast<char*> (&st), sizeof(student));
-		if (st.retrollno() == n)
+		File.read(reinterpret_cast<char*> (&st), sizeof(car));
+		if (st.retserial() == n)
 		{
 			st.showdata();
-			cout << "\n\nPlease Enter The New Details of student" << endl;
+			cout << "\n\nÂâåäèòå Íîâûå äàííûå àâòîìîáèëÿ" << endl;
 			st.getdata();
 			int pos = (-1) * static_cast<int>(sizeof(st));
 			File.seekp(pos, ios::cur);
-			File.write(reinterpret_cast<char*> (&st), sizeof(student));
-			cout << "\n\n\t Record Updated";
+			File.write(reinterpret_cast<char*> (&st), sizeof(car));
+			cout << "\n\n\t Îáíîâëåíà çàïèñü";
 			found = true;
 		}
 	}
 	File.close();
 	if (found == false)
-		cout << "\n\n Record Not Found ";
+		cout << "\n\n Çàïèñü Íå Íàéäåíà ";
 	cin.ignore();
 	cin.get();
 }
 
-//***************************************************************
-//    	function to delete record of file
-//****************************************************************
-
-void delete_student(int n)
+void car_records()
 {
-	student st;
+	car st;
 	ifstream inFile;
-	inFile.open("student.dat", ios::binary);
+	inFile.open("car.dat", ios::binary);
 	if (!inFile)
 	{
-		cout << "File could not be open !! Press any Key...";
+		cout << "Îøèáêà îòêðûòèÿ ôàéëà...";
 		cin.ignore();
 		cin.get();
 		return;
 	}
-	ofstream outFile;
-	outFile.open("Temp.dat", ios::out);
-	inFile.seekg(0, ios::beg);
-	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(student)))
-	{
-		if (st.retrollno() != n)
-		{
-			outFile.write(reinterpret_cast<char*> (&st), sizeof(student));
-		}
-	}
-	outFile.close();
-	inFile.close();
-	remove("student.dat");
-	rename("Temp.dat", "student.dat");
-	cout << "\n\n\tRecord Deleted ..";
-	cin.ignore();
-	cin.get();
-}
-
-//***************************************************************
-//    	function to display all students grade report
-//****************************************************************
-
-void class_result()
-{
-	student st;
-	ifstream inFile;
-	inFile.open("student.dat", ios::binary);
-	if (!inFile)
-	{
-		cout << "File could not be open !! Press any Key...";
-		cin.ignore();
-		cin.get();
-		return;
-	}
-	cout << "\n\n\t\tALL STUDENTS RESULT \n\n";
+	cout << "\n\n\t\tÒÀÁËÈ×ÍÀß ÇÀÏÈÑÜ \n\n";
 	cout << "==========================================================\n";
-	cout << "R.No       Name        P   C   M   E   CS   %age   Grade" << endl;
+	cout <<
+		"S/N" << setfill(' ') << setw(4) << " " << setfill(' ') << setw(4) <<
+		"Make" << setfill(' ') << setw(6) << " " << setfill(' ') << setw(6) <<
+		"Model" << setfill(' ') << setw(6) << " " << setfill(' ') << setw(6) <<
+		"Speed" << setfill(' ') << setw(6) << " " << setfill(' ') << setw(6) <<
+		"Capacity" << endl;
 	cout << "==========================================================\n";
-	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(student)))
+	while (inFile.read(reinterpret_cast<char*> (&st), sizeof(car)))
 	{
 		st.show_tabular();
 	}
@@ -497,80 +251,60 @@ void class_result()
 	inFile.close();
 }
 
-//***************************************************************
-//    	function to display result menu
-//****************************************************************
-
-void result()
+void records_page()
 {
 	char ch;
 	int rno;
 	system("cls");
-	cout << "\n\n\n\tRESULT MENU";
-	cout << "\n\n\n\t1. Class Result";
-	cout << "\n\n\t2. Student Report Card";
-	cout << "\n\n\t3. Back to Main Menu";
-	cout << "\n\n\n\tEnter Choice (1/2/3)? ";
+	cout << "\n\n\n\ ÌÅÍÞ ÇÀÏÈÑÈ";
+	cout << "\n\n\n\t1. Âñå Àâòîìîáèëè";
+	cout << "\n\n\t2. Êîíêðåòíûé àâòîìîáèëü";
+	cout << "\n\n\t3. Âåðíóòüñÿ â Ãëàâíîå ìåíþ";
+	cout << "\n\n\n\tÂâåäèòå Âûáîð (1/2/3)? ";
 	cin >> ch;
 	system("cls");
 	switch (ch)
 	{
-	case '1':	class_result(); break;
-	case '2':	cout << "\n\n\tEnter Roll Number Of Student : "; cin >> rno;
-		display_sp(rno); break;
+	case '1':	car_records(); break;
+	case '2':	cout << "\n\n\tÂâåäèòå Ñåðèéíûé Íîìåð Àâòîìîáèëÿ : "; cin >> rno;
+		display_specific(rno); break;
 	case '3':	break;
 	default:	cout << "\a";
 	}
 }
 
-//***************************************************************
-//    	INTRODUCTION FUNCTION
-//****************************************************************
-
 void intro()
 {
-	cout << "\n\n\n\t\t  STUDENT";
-	cout << "\n\n\t\tREPORT CARD";
-	cout << "\n\n\t\t  PROJECT";
-	cout << "\n\n\n\tMADE BY : SULABH AGRAWAL";
-	cout << "\n\tSCHOOL : CAMBRIDGE SCHOOL";
+	cout << "\n\n\n\t\t  ÐÅÊÎÐÄ ÀÂÒÎÌÎÁÈËÅÉ";
 	cin.get();
 }
-
-//***************************************************************
-//    	ENTRY / EDIT MENU FUNCTION
-//****************************************************************
 
 void entry_menu()
 {
 	char ch;
 	int num;
 	system("cls");
-	cout << "\n\n\n\tENTRY MENU";
-	cout << "\n\n\t1.CREATE STUDENT RECORD";
-	cout << "\n\n\t2.DISPLAY ALL STUDENTS RECORDS";
-	cout << "\n\n\t3.SEARCH STUDENT RECORD ";
-	cout << "\n\n\t4.MODIFY STUDENT RECORD";
-	cout << "\n\n\t5.DELETE STUDENT RECORD";
-	cout << "\n\n\t6.BACK TO MAIN MENU";
-	cout << "\n\n\tPlease Enter Your Choice (1-6) ";
+	cout << "\n\n\n\tÌÅÍÞ ÂÂÎÄÀ";
+	cout << "\n\n\t1.ÑÎÇÄÀÉÒÅ ÍÎÂÓÞ ÇÀÏÈÑÜ ÀÂÒÎÌÎÁÈËß";
+	cout << "\n\n\t2.ÎÒÎÁÐÀÆÅÍÈÅ ÂÑÅÕ ÇÀÏÈÑÅÉ ÀÂÒÎÌÎÁÈËß";
+	cout << "\n\n\t3.ÏÎÈÑÊ ÇÀÏÈÑÈ ÀÂÒÎÌÎÁÈËß";
+	cout << "\n\n\t4.ÈÇÌÅÍÈÒÜ ÇÀÏÈÑÜ ÀÂÒÎÌÎÁÈËß";
+	cout << "\n\n\t5.Âåðíóòüñÿ â Ãëàâíîå ìåíþ";
+	cout << "\n\n\tÂâåäèòå Âûáîð (1-5) ";
 	cin >> ch;
 	system("cls");
 	switch (ch)
 	{
-	case '1':	write_student(); break;
+	case '1':	write_car(); break;
 	case '2':	display_all(); break;
-	case '3':	cout << "\n\n\tPlease Enter The roll number "; cin >> num;
-		display_sp(num); break;
-	case '4':	cout << "\n\n\tPlease Enter The roll number "; cin >> num;
-		modify_student(num); break;
-	case '5':	cout << "\n\n\tPlease Enter The roll number "; cin >> num;
-		delete_student(num); break;
-	case '6':	break;
+	case '3':	cout << "\n\n\tÂâåäèòå Ñåðèéíûé Íîìåð Àâòîìîáèëÿ "; cin >> num;
+		display_specific(num); break;
+	case '4':	cout << "\n\n\tÂâåäèòå Ñåðèéíûé Íîìåð Àâòîìîáèëÿ "; cin >> num;
+		modify_car(num); break;
+	case '5':	break;
+	//case '6': cin >> num; delete_student(num);
 	default:	cout << "\a"; entry_menu();
 	}
 }
 
-//***************************************************************
-//    			END OF PROJECT
-//***************************************************************
+

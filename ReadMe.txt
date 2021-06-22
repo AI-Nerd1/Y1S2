@@ -1,26 +1,26 @@
 ========================================================================
-    APPLICATION : Lab 14 def Project Overview
+    APPLICATION : Lab 18 Project Overview
 ========================================================================
 
-AppWizard has created this Lab 14 def Application for you.  
+AppWizard has created this Lab 18 Application for you.  
 
 This file contains a summary of what you will find in each of the files that
-make up your Lab 14 def application.
+make up your Lab 18 application.
 
-Lab 14 def.vcxproj
+Lab 18.vcxproj
     This is the main project file for VC++ projects generated using an Application Wizard. 
     It contains information about the version of Visual C++ that generated the file, and 
     information about the platforms, configurations, and project features selected with the
     Application Wizard.
 
-Lab 14 def.vcxproj.filters
+Lab 18.vcxproj.filters
     This is the filters file for VC++ projects generated using an Application Wizard. 
     It contains information about the association between the files in your project 
     and the filters. This association is used in the IDE to show grouping of files with
     similar extensions under a specific node (for e.g. ".cpp" files are associated with the
     "Source Files" filter).
 
-Lab 14 def.cpp
+Lab 18.cpp
     This is the main application source file.
     Contains the code to display the form.
 
@@ -35,6 +35,6 @@ Other standard files:
 
 StdAfx.h, StdAfx.cpp
     These files are used to build a precompiled header (PCH) file
-    named Lab 14 def.pch and a precompiled types file named StdAfx.obj.
+    named Lab 18.pch and a precompiled types file named StdAfx.obj.
 
 /////////////////////////////////////////////////////////////////////////////

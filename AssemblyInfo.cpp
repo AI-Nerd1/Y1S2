@@ -11,11 +11,11 @@ using namespace System::Security::Permissions;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly:AssemblyTitleAttribute("Lab14def")];
+[assembly:AssemblyTitleAttribute("Lab18")];
 [assembly:AssemblyDescriptionAttribute("")];
 [assembly:AssemblyConfigurationAttribute("")];
 [assembly:AssemblyCompanyAttribute("HP Inc.")];
-[assembly:AssemblyProductAttribute("Lab14def")];
+[assembly:AssemblyProductAttribute("Lab18")];
 [assembly:AssemblyCopyrightAttribute("Copyright (c) HP Inc. 2021")];
 [assembly:AssemblyTrademarkAttribute("")];
 [assembly:AssemblyCultureAttribute("")];
